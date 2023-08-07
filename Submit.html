@@ -11,31 +11,33 @@
 <body>
     <div class="banner">
         <div class="navbar">
-            <img src="NF_CLAN.png" class="logo">
+            <a href="index.html">
+                <img src="NF_CLAN.png" class="logo">
+            </a>
             <ul>
 
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Submit.html">Join Us</a></li>
-                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="AboutUs.html">Accounts</a></li>
             </ul>
         </div>
         <div class="content">
             <h1>Apply to join our clan</h1>
             <div>
                 <div class="text">
-                    <p>Fill in the blanks below and we will get back to you after a while if you are accepted or not</p>
+                    <p class="p"> Fill in the blanks below and we will Email you after a while if you are accepted or not</p>
                 </div>
-                <form action="https://formsubmit.co/khelifm919@email.com" method="post">
+                <form action="https://formspree.io/f/xjvqybrz" method="post">
                     <br />
-                    <input type="yourName" class="input" placeholder="Your name">
+                    <p class="gold">Note: If you are accepted into the clan, you must put the logo next to your name on Discord, otherwise you will be removed from the clan</p>
                     <br />
-                    <input type="yourage" class="input" placeholder="Your age">
+                    <input class="input" placeholder="Your name" type="text" id="username" name="username" required>
                     <br />
-                    <input type="YourCountry" class="input" placeholder="Your Country">
+                    <input id="age" name="age" type="number" class="input" placeholder="Your age" required>
+                    <br />
+                    <input id="email" name="email" type="email" class="input" placeholder="Your email" required>
                     <br />
                     <button type="submit"><span></span>Submit</button>
-                    <br />
-                    <p>Note: If you are accepted into the clan, you must put the logo next to your name on Discord, otherwise you will be removed from the clan</p>
                 </form>
             </div>
         </div>

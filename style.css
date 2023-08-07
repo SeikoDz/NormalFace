@@ -24,7 +24,7 @@
 .logo {
     width: 150px;
     cursor: pointer;
-    top: -50px;
+    top: -70px;
     right: 90px;
     position: relative;
 }
@@ -58,15 +58,18 @@
 
 .navbar ul li:hover:after {
     width: 100%;
+    box-shadow: 0 0 7px goldenrod;
 }
 
 .content {
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 40%;
     transform: translateY(-50);
+    top: auto;
     text-align: center;
-    color: goldenrod;
+    color: whitesmoke;
+    font-size: large;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -84,6 +87,8 @@ button {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    bottom: -8px;
+    box-shadow: 0 0 5px goldenrod;
 }
 
 span {
@@ -103,17 +108,20 @@ button:hover span {
 }
 
 button:hover {
+    transition: 0.7s;
     border: none;
+    box-shadow: 0 0 5px goldenrod, 0 0 25px goldenrod, 0 0 50px goldenrod, 0 0 100px goldenrod;
 }
 
 .link {
     color: goldenrod;
     cursor: pointer;
     position: relative;
+    bottom: 10px;
 }
 
 .text {
-    color: goldenrod;
+    color: white;
     position: relative;
     cursor: pointer;
     text-align: center;
@@ -134,4 +142,16 @@ button:hover {
     position: relative;
     overflow: hidden;
     z-index: 1;
+    box-shadow: 0 0 5px goldenrod;
+}
+
+.p {
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    bottom: -10px;
+}
+
+.gold {
+    color: rgb(238, 179, 30);
 }
